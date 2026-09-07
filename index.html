@@ -151,6 +151,7 @@ footer .stamp{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color
 <nav>
 <div class="nav-scroll" id="navScroll">
 <button class="nav-pill active" data-section="welcome"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg><span data-i18n="nav.welcome"></span></button>
+<button class="nav-pill" data-section="info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg><span data-i18n="nav.info"></span></button>
 <button class="nav-pill" data-section="transport"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="3" rx="2"/><path d="M4 11h16M12 3v8M8 19l-2 3M18 22l-2-3"/><circle cx="8" cy="15" r="1"/><circle cx="16" cy="15" r="1"/></svg><span data-i18n="nav.transport"></span></button>
 <button class="nav-pill" data-section="shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/></svg><span data-i18n="nav.shop"></span></button>
 <button class="nav-pill" data-section="eat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg><span data-i18n="nav.eat"></span></button>
@@ -176,6 +177,29 @@ footer .stamp{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color
 <div class="quick-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="4" cy="6.5" r=".5" fill="currentColor"/><path d="m16 20 3-1 1-7-6-2"/><path d="m16 20-2-7-2.5-1c-1-.4-1-2 0-2.4l4-1.6 4 2 2 1"/><circle cx="13" cy="3.5" r="1.5"/></svg><div class="label" data-i18n="qc.walk.l"></div><div class="sub" data-i18n="qc.walk.s"></div></div>
 </div>
 <p class="welcome-end" data-i18n="welcome.end"></p>
+</section>
+<section class="section" id="info">
+<div class="section-header"><p class="eyebrow" data-i18n="info.eyebrow"></p><h2 data-i18n="info.title"></h2></div>
+<div class="cards">
+<div class="card iconic">
+<div class="card-badge badge-iconic" data-i18n="info.checkin.title"></div>
+<div class="card-name" data-i18n="info.checkin.time" style="font-size:28px"></div>
+<div class="card-tip" data-i18n="info.checkin.note"></div>
+</div>
+<div class="card iconic">
+<div class="card-badge badge-iconic" data-i18n="info.checkout.title"></div>
+<div class="card-name" data-i18n="info.checkout.time" style="font-size:28px"></div>
+<div class="card-tip" data-i18n="info.checkout.note"></div>
+</div>
+<div class="card featured" style="grid-column:1/-1">
+<div class="card-badge badge-featured" data-i18n="info.recycle.title"></div>
+<p data-i18n="info.recycle.note" style="font-size:13px;color:#3D3D3D;margin-bottom:10px"></p>
+<p class="card-tip" data-i18n="info.recycle.location"></p>
+<div class="card-actions">
+<a class="btn btn-primary gold" href="https://www.google.com/maps/search/?api=1&query=Parco%20Caduti%20del%2019%20Luglio%201943%2C%20Via%20Tiburtina%2C%20Rome%2C%20Italy" target="_blank" rel="noopener"><span data-i18n="info.recycle.cta"></span></a>
+</div>
+</div>
+</div>
 </section>
 <section class="section" id="transport">
 <div class="section-header"><p class="eyebrow" data-i18n="tr.eyebrow"></p><h2 data-i18n="tr.title"></h2></div>
@@ -213,11 +237,20 @@ footer .stamp{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color
 const I18N = {
   it: {
     'hdr.eyebrow':'Guida per i nostri ospiti','hdr.tagline':'La tua casa a Roma',
-    'nav.welcome':'Benvenuti','nav.transport':'Trasporti','nav.shop':'Spesa','nav.eat':'Ristoranti','nav.sweet':'Dolci','nav.services':'Servizi','nav.walk':'Al Colosseo',
+    'nav.welcome':'Benvenuti','nav.info':'Check-in','nav.transport':'Trasporti','nav.shop':'Spesa','nav.eat':'Ristoranti','nav.sweet':'Dolci','nav.services':'Servizi','nav.walk':'Al Colosseo',
     'welcome.greeting':'Buongiorno',
     'welcome.title':'Tutto ciò che vi serve, a portata di mano.',
     'welcome.intro':"Abbiamo selezionato i posti migliori del nostro quartiere — quelli che frequentiamo davvero, dai supermercati sotto casa alle gelaterie storiche. Ogni nome qui sotto è cliccabile: si apre direttamente in Google Maps con le indicazioni a piedi dall'appartamento.",
     'welcome.end':'Buon soggiorno, e benvenuti a Roma.',
+    'info.eyebrow':'Prima di partire','info.title':'Check-in, uscita e differenziata',
+    'info.checkin.title':'Check-in','info.checkin.time':'16:00 – 20:00',
+    'info.checkin.note':"Per arrivi dopo le 20:00 scriveteci in anticipo: troveremo sempre una soluzione.",
+    'info.checkout.title':'Check-out','info.checkout.time':'Entro le 10:00',
+    'info.checkout.note':'Lasciate le chiavi sul tavolo del soggiorno, chiudete bene la porta e spegnete luci e aria condizionata.',
+    'info.recycle.title':'Raccolta differenziata',
+    'info.recycle.note':"I colori dei bidoni possono variare da palazzo a palazzo: l'importante è differenziare nella categoria giusta, non il colore esatto.",
+    'info.recycle.location':'I bidoni si trovano su via Tiburtina, vicino al Parco Caduti del 19 Luglio 1943.',
+    'info.recycle.cta':'Apri la mappa',
     'qc.shop.l':'5 supermercati','qc.shop.s':'a meno di 5 minuti',
     'qc.eat.l':'I Fratelli & co.','qc.eat.s':'i preferiti dei romani',
     'qc.sweet.l':'4 gelaterie + Fassi','qc.sweet.s':'dal 1880',
@@ -255,11 +288,20 @@ const I18N = {
   },
   en: {
     'hdr.eyebrow':'Guest Welcome Book','hdr.tagline':'Your home in Rome',
-    'nav.welcome':'Welcome','nav.transport':'Transport','nav.shop':'Groceries','nav.eat':'Restaurants','nav.sweet':'Sweets','nav.services':'Services','nav.walk':'To Colosseum',
+    'nav.welcome':'Welcome','nav.info':'Check-in','nav.transport':'Transport','nav.shop':'Groceries','nav.eat':'Restaurants','nav.sweet':'Sweets','nav.services':'Services','nav.walk':'To Colosseum',
     'welcome.greeting':'Buongiorno',
     'welcome.title':'Everything you need, within reach.',
     'welcome.intro':"We've curated the best spots in our neighbourhood — the ones we actually visit, from the corner-shop supermarkets to the historic gelato places. Every name below is tappable and opens directly in Google Maps with walking directions from the apartment.",
     'welcome.end':'Have a wonderful stay, and welcome to Rome.',
+    'info.eyebrow':'Before you go','info.title':'Check-in, check-out & recycling',
+    'info.checkin.title':'Check-in','info.checkin.time':'4:00 PM – 8:00 PM',
+    'info.checkin.note':"For arrivals after 8:00 PM, write to us in advance — we'll always find a solution.",
+    'info.checkout.title':'Check-out','info.checkout.time':'By 10:00 AM',
+    'info.checkout.note':'Leave the keys on the living room table, close the door firmly, and switch off the lights and air conditioning.',
+    'info.recycle.title':'Recycling',
+    'info.recycle.note':"Bin colors can vary by building — what matters is sorting into the right category, not matching the exact color.",
+    'info.recycle.location':'The bins are on Via Tiburtina, near Parco Caduti del 19 Luglio 1943.',
+    'info.recycle.cta':'Open the map',
     'qc.shop.l':'5 supermarkets','qc.shop.s':'under 5 minutes',
     'qc.eat.l':'I Fratelli & co.','qc.eat.s':'local favourites',
     'qc.sweet.l':'4 gelaterie + Fassi','qc.sweet.s':'since 1880',
@@ -297,11 +339,20 @@ const I18N = {
   },
   fr: {
     'hdr.eyebrow':'Guide pour nos hôtes','hdr.tagline':'Votre maison à Rome',
-    'nav.welcome':'Bienvenue','nav.transport':'Transports','nav.shop':'Courses','nav.eat':'Restaurants','nav.sweet':'Douceurs','nav.services':'Services','nav.walk':'Au Colisée',
+    'nav.welcome':'Bienvenue','nav.info':'Arrivée','nav.transport':'Transports','nav.shop':'Courses','nav.eat':'Restaurants','nav.sweet':'Douceurs','nav.services':'Services','nav.walk':'Au Colisée',
     'welcome.greeting':'Buongiorno',
     'welcome.title':'Tout ce dont vous avez besoin, à portée de main.',
     'welcome.intro':"Nous avons sélectionné les meilleures adresses de notre quartier — celles que nous fréquentons vraiment, des supermarchés du coin aux glaciers historiques. Chaque nom ci-dessous est cliquable : il ouvre directement Google Maps avec l'itinéraire à pied depuis l'appartement.",
     'welcome.end':'Bon séjour, et bienvenue à Rome.',
+    'info.eyebrow':'Avant de partir','info.title':'Arrivée, départ et tri sélectif',
+    'info.checkin.title':'Arrivée','info.checkin.time':'16h00 – 20h00',
+    'info.checkin.note':"Pour les arrivées après 20h00, écrivez-nous à l'avance — nous trouverons toujours une solution.",
+    'info.checkout.title':'Départ','info.checkout.time':'Avant 10h00',
+    'info.checkout.note':'Laissez les clés sur la table du salon, fermez bien la porte et éteignez les lumières et la climatisation.',
+    'info.recycle.title':'Tri sélectif',
+    'info.recycle.note':"La couleur des poubelles peut varier d'un immeuble à l'autre — l'important est de trier dans la bonne catégorie, pas de respecter la couleur exacte.",
+    'info.recycle.location':'Les poubelles se trouvent via Tiburtina, près du Parco Caduti del 19 Luglio 1943.',
+    'info.recycle.cta':'Ouvrir la carte',
     'qc.shop.l':'5 supermarchés','qc.shop.s':'à moins de 5 minutes',
     'qc.eat.l':'I Fratelli & co.','qc.eat.s':'les favoris des Romains',
     'qc.sweet.l':'4 glaciers + Fassi','qc.sweet.s':'depuis 1880',
@@ -339,11 +390,20 @@ const I18N = {
   },
   es: {
     'hdr.eyebrow':'Guía para nuestros huéspedes','hdr.tagline':'Tu casa en Roma',
-    'nav.welcome':'Bienvenidos','nav.transport':'Transporte','nav.shop':'Compras','nav.eat':'Restaurantes','nav.sweet':'Dulces','nav.services':'Servicios','nav.walk':'Al Coliseo',
+    'nav.welcome':'Bienvenidos','nav.info':'Check-in','nav.transport':'Transporte','nav.shop':'Compras','nav.eat':'Restaurantes','nav.sweet':'Dulces','nav.services':'Servicios','nav.walk':'Al Coliseo',
     'welcome.greeting':'Buongiorno',
     'welcome.title':'Todo lo que necesitan, al alcance de la mano.',
     'welcome.intro':"Hemos seleccionado los mejores lugares de nuestro barrio — los que realmente frecuentamos, desde los supermercados de la esquina hasta las heladerías históricas. Cada nombre aquí abajo es clicable: abre directamente Google Maps con las indicaciones a pie desde el apartamento.",
     'welcome.end':'Que tengan una estadía maravillosa, y bienvenidos a Roma.',
+    'info.eyebrow':'Antes de irse','info.title':'Check-in, check-out y reciclaje',
+    'info.checkin.title':'Check-in','info.checkin.time':'16:00 – 20:00',
+    'info.checkin.note':"Para llegadas después de las 20:00, escríbannos con antelación: siempre encontraremos una solución.",
+    'info.checkout.title':'Check-out','info.checkout.time':'Antes de las 10:00',
+    'info.checkout.note':'Dejen las llaves en la mesa del salón, cierren bien la puerta y apaguen las luces y el aire acondicionado.',
+    'info.recycle.title':'Reciclaje',
+    'info.recycle.note':"El color de los contenedores puede variar según el edificio — lo importante es separar en la categoría correcta, no el color exacto.",
+    'info.recycle.location':'Los contenedores están en via Tiburtina, cerca del Parco Caduti del 19 Luglio 1943.',
+    'info.recycle.cta':'Abrir el mapa',
     'qc.shop.l':'5 supermercados','qc.shop.s':'a menos de 5 minutos',
     'qc.eat.l':'I Fratelli & co.','qc.eat.s':'los favoritos de los romanos',
     'qc.sweet.l':'4 heladerías + Fassi','qc.sweet.s':'desde 1880',
@@ -381,11 +441,20 @@ const I18N = {
   },
   de: {
     'hdr.eyebrow':'Gästeführer','hdr.tagline':'Ihr Zuhause in Rom',
-    'nav.welcome':'Willkommen','nav.transport':'Verkehr','nav.shop':'Einkauf','nav.eat':'Restaurants','nav.sweet':'Süßes','nav.services':'Service','nav.walk':'Zum Kolosseum',
+    'nav.welcome':'Willkommen','nav.info':'Check-in','nav.transport':'Verkehr','nav.shop':'Einkauf','nav.eat':'Restaurants','nav.sweet':'Süßes','nav.services':'Service','nav.walk':'Zum Kolosseum',
     'welcome.greeting':'Buongiorno',
     'welcome.title':'Alles, was Sie brauchen, in Reichweite.',
     'welcome.intro':"Wir haben die besten Orte in unserem Viertel ausgewählt — die wir wirklich besuchen, von den Supermärkten um die Ecke bis zu den historischen Eisdielen. Jeder Name unten ist anklickbar: er öffnet direkt Google Maps mit der Fußroute von der Wohnung.",
     'welcome.end':'Einen schönen Aufenthalt, und willkommen in Rom.',
+    'info.eyebrow':'Vor der Abreise','info.title':'Check-in, Check-out & Mülltrennung',
+    'info.checkin.title':'Check-in','info.checkin.time':'16:00 – 20:00 Uhr',
+    'info.checkin.note':"Bei Ankunft nach 20:00 Uhr schreiben Sie uns bitte vorher — wir finden immer eine Lösung.",
+    'info.checkout.title':'Check-out','info.checkout.time':'Bis 10:00 Uhr',
+    'info.checkout.note':'Lassen Sie die Schlüssel auf dem Wohnzimmertisch, schließen Sie die Tür fest und schalten Sie Licht und Klimaanlage aus.',
+    'info.recycle.title':'Mülltrennung',
+    'info.recycle.note':"Die Farben der Mülltonnen können von Gebäude zu Gebäude variieren — wichtig ist die richtige Kategorie, nicht die exakte Farbe.",
+    'info.recycle.location':'Die Mülltonnen befinden sich in der Via Tiburtina, nahe dem Parco Caduti del 19 Luglio 1943.',
+    'info.recycle.cta':'Karte öffnen',
     'qc.shop.l':'5 Supermärkte','qc.shop.s':'unter 5 Minuten',
     'qc.eat.l':'I Fratelli & Co.','qc.eat.s':'Lieblinge der Römer',
     'qc.sweet.l':'4 Eisdielen + Fassi','qc.sweet.s':'seit 1880',
@@ -423,11 +492,20 @@ const I18N = {
   },
   ru: {
     'hdr.eyebrow':'Путеводитель для гостей','hdr.tagline':'Ваш дом в Риме',
-    'nav.welcome':'Добро пожаловать','nav.transport':'Транспорт','nav.shop':'Продукты','nav.eat':'Рестораны','nav.sweet':'Сладкое','nav.services':'Услуги','nav.walk':'К Колизею',
+    'nav.welcome':'Добро пожаловать','nav.info':'Заселение','nav.transport':'Транспорт','nav.shop':'Продукты','nav.eat':'Рестораны','nav.sweet':'Сладкое','nav.services':'Услуги','nav.walk':'К Колизею',
     'welcome.greeting':'Buongiorno',
     'welcome.title':'Всё необходимое — рядом с вами.',
     'welcome.intro':"Мы отобрали лучшие места нашего района — те, куда ходим сами: от соседних супермаркетов до исторических джелатерий. Каждое название ниже кликабельно — оно открывает Google Maps с пешим маршрутом от квартиры.",
     'welcome.end':'Желаем прекрасного пребывания. Добро пожаловать в Рим.',
+    'info.eyebrow':'Перед отъездом','info.title':'Заселение, выезд и сортировка мусора',
+    'info.checkin.title':'Заселение','info.checkin.time':'16:00 – 20:00',
+    'info.checkin.note':"При заезде после 20:00 напишите нам заранее — мы всегда найдём решение.",
+    'info.checkout.title':'Выезд','info.checkout.time':'До 10:00',
+    'info.checkout.note':'Оставьте ключи на столе в гостиной, плотно закройте дверь и выключите свет и кондиционер.',
+    'info.recycle.title':'Сортировка мусора',
+    'info.recycle.note':"Цвет баков может отличаться в разных домах — важно правильно рассортировать мусор по категориям, а не подобрать точный цвет.",
+    'info.recycle.location':'Баки находятся на via Tiburtina, рядом с Parco Caduti del 19 Luglio 1943.',
+    'info.recycle.cta':'Открыть карту',
     'qc.shop.l':'5 супермаркетов','qc.shop.s':'менее 5 минут',
     'qc.eat.l':'I Fratelli и др.','qc.eat.s':'любимцы римлян',
     'qc.sweet.l':'4 джелатерии + Fassi','qc.sweet.s':'с 1880 года',
