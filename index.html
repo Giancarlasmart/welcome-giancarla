@@ -122,6 +122,7 @@ main{max-width:900px;margin:0 auto;padding:48px 20px 32px}
 .walk-step-desc{font-size:13px;line-height:1.5;color:#3D3D3D}
 .walk-step-link{display:inline-flex;align-items:center;gap:5px;margin-top:10px;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#6B2737;font-weight:600}
 .walk-step-link svg{width:11px;height:11px}
+.direct-route{font-size:13px;color:#6B5B3F;margin-top:8px;font-weight:500}
 .walk-cta{text-align:center;margin-top:32px}
 .walk-cta a{display:inline-flex;align-items:center;gap:8px;background:#1F3D2C;color:#FAF6EE;padding:14px 24px;border-radius:999px;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;font-weight:600}
 .walk-cta svg{width:14px;height:14px}
@@ -229,7 +230,7 @@ footer .stamp{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color
 <section class="section" id="eat"><div class="section-header"><p class="eyebrow" data-i18n="eat.eyebrow"></p><h2 data-i18n="eat.title"></h2></div><div class="cards" id="eat-cards"></div><div class="subsection"><h3 class="subsection-title" data-i18n="eat.pizza"></h3><div class="cards" id="pizza-cards"></div></div></section>
 <section class="section" id="sweet"><div class="section-header"><p class="eyebrow" data-i18n="sweet.eyebrow"></p><h2 data-i18n="sweet.title"></h2></div><p style="text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:#6B5B3F;max-width:600px;margin:0 auto 32px" data-i18n="sweet.intro"></p><div class="cards" id="gelato-cards"></div><div class="subsection"><h3 class="subsection-title" data-i18n="sweet.maritozzo"></h3><div class="cards" id="pastry-cards" style="max-width:480px;margin:0 auto;grid-template-columns:1fr"></div></div></section>
 <section class="section" id="services"><div class="section-header"><p class="eyebrow" data-i18n="serv.eyebrow"></p><h2 data-i18n="serv.laundry"></h2></div><div class="cards" id="laundry-cards"></div><div class="subsection"><h3 class="subsection-title" data-i18n="serv.pharmacy"></h3><div class="cards" id="pharmacy-cards"></div></div></section>
-<section class="section" id="walk"><div class="section-header"><p class="eyebrow" data-i18n="walk.eyebrow"></p><h2 data-i18n="walk.title"></h2></div><div class="walk-intro"><p data-i18n="walk.intro"></p><div class="gold-line"></div><p class="total"><span data-i18n="walk.total"></span> · 25–35 min</p></div><ol class="walk-list" id="walk-steps"></ol><div class="walk-cta"><a href="https://www.google.com/maps/dir/?api=1&origin=Via+dei+Latini+40,+Roma&destination=Colosseo,+Roma&travelmode=walking" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="4" cy="6.5" r=".5" fill="currentColor"/><path d="m16 20 3-1 1-7-6-2"/><path d="m16 20-2-7-2.5-1c-1-.4-1-2 0-2.4l4-1.6 4 2 2 1"/><circle cx="13" cy="3.5" r="1.5"/></svg><span data-i18n="walk.cta"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:11px;height:11px"><path d="M15 3h6v6M10 14 21 3M21 14v7H3V3h7"/></svg></a></div></section>
+<section class="section" id="walk"><div class="section-header"><p class="eyebrow" data-i18n="walk.eyebrow"></p><h2 data-i18n="walk.title"></h2></div><div class="walk-intro"><p data-i18n="walk.intro"></p><p class="direct-route" data-i18n="walk.direct"></p><div class="gold-line"></div><p class="total"><span data-i18n="walk.total"></span> · 30 min</p></div><ol class="walk-list" id="walk-steps"></ol><div class="walk-cta"><a href="https://www.google.com/maps/dir/?api=1&origin=Via+dei+Latini+40,+Roma&destination_place_id=ChIJrRMgU7ZhLxMRxAOFkC7I8Sg&travelmode=walking" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="4" cy="6.5" r=".5" fill="currentColor"/><path d="m16 20 3-1 1-7-6-2"/><path d="m16 20-2-7-2.5-1c-1-.4-1-2 0-2.4l4-1.6 4 2 2 1"/><circle cx="13" cy="3.5" r="1.5"/></svg><span data-i18n="walk.cta"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:11px;height:11px"><path d="M15 3h6v6M10 14 21 3M21 14v7H3V3h7"/></svg></a></div></section>
 </main>
 <footer><p class="closing" data-i18n="ftr.closing"></p><p class="stamp">Giancarla Luxury Apartment · Roma · San Lorenzo</p></footer>
 <script>
@@ -279,8 +280,9 @@ const I18N = {
     'sweet.maritozzo':'E per il maritozzo più famoso di Roma',
     'serv.eyebrow':'Praticità','serv.laundry':'Lavanderia','serv.pharmacy':'Farmacia',
     'walk.eyebrow':"L'itinerario d'autore",'walk.title':'Al Colosseo a piedi',
-    'walk.intro':'20 minuti dalla nostra porta al Colosseo. Un percorso che attraversa duemila anni di storia e si concede due tappe golose impossibili da rifiutare.',
-    'walk.total':'Tempo totale','walk.cta':'Apri il percorso in Google Maps',
+    'walk.intro':'Il percorso panoramico verso il Colosseo: attraversa duemila anni di storia e si concede tappe golose impossibili da rifiutare.',
+    'walk.direct':'Percorso diretto, senza soste: Via Bibbiana → Viale Manzoni → Via Labicana · 20 min',
+    'walk.total':'Tempo totale (con tappe)','walk.cta':'Apri il percorso in Google Maps',
     'walk.directions':'Apri indicazioni',
     'ftr.closing':'Per qualsiasi cosa, siamo qui.',
     'ui.iconic':'Iconico','ui.favourite':'Il preferito del quartiere',
@@ -330,8 +332,9 @@ const I18N = {
     'sweet.maritozzo':"And for Rome's most famous maritozzo",
     'serv.eyebrow':'Daily essentials','serv.laundry':'Laundry','serv.pharmacy':'Pharmacy',
     'walk.eyebrow':'The signature walk','walk.title':'To the Colosseum on foot',
-    'walk.intro':'20 minutes from our door to the Colosseum. A walk through two thousand years of history with two unmissable food stops.',
-    'walk.total':'Total time','walk.cta':'Open the full route in Google Maps',
+    'walk.intro':'The scenic route to the Colosseum: a walk through two thousand years of history with unmissable food stops along the way.',
+    'walk.direct':'Direct route, no stops: Via Bibbiana → Viale Manzoni → Via Labicana · 20 min',
+    'walk.total':'Total time (with stops)','walk.cta':'Open the full route in Google Maps',
     'walk.directions':'Open directions',
     'ftr.closing':"For anything else, we're here.",
     'ui.iconic':'Iconic','ui.favourite':'Local favourite',
@@ -381,8 +384,9 @@ const I18N = {
     'sweet.maritozzo':'Et pour le maritozzo le plus célèbre de Rome',
     'serv.eyebrow':'Pratique au quotidien','serv.laundry':'Laverie','serv.pharmacy':'Pharmacie',
     'walk.eyebrow':"L'itinéraire signature",'walk.title':'Au Colisée à pied',
-    'walk.intro':"20 minutes de notre porte au Colisée. Une promenade à travers deux mille ans d'histoire avec deux étapes gourmandes incontournables.",
-    'walk.total':'Temps total','walk.cta':"Ouvrir l'itinéraire dans Google Maps",
+    'walk.intro':"L'itinéraire panoramique vers le Colisée : une promenade à travers deux mille ans d'histoire avec des étapes gourmandes incontournables.",
+    'walk.direct':'Itinéraire direct, sans arrêt : Via Bibbiana → Viale Manzoni → Via Labicana · 20 min',
+    'walk.total':'Temps total (avec étapes)','walk.cta':"Ouvrir l'itinéraire dans Google Maps",
     'walk.directions':"Ouvrir l'itinéraire",
     'ftr.closing':'Pour toute chose, nous sommes là.',
     'ui.iconic':'Iconique','ui.favourite':'Le préféré du quartier',
@@ -432,8 +436,9 @@ const I18N = {
     'sweet.maritozzo':'Y para el maritozzo más famoso de Roma',
     'serv.eyebrow':'Lo práctico','serv.laundry':'Lavandería','serv.pharmacy':'Farmacia',
     'walk.eyebrow':'El itinerario de autor','walk.title':'Al Coliseo a pie',
-    'walk.intro':'20 minutos desde nuestra puerta hasta el Coliseo. Un recorrido que atraviesa dos mil años de historia con dos paradas golosas imposibles de rechazar.',
-    'walk.total':'Tiempo total','walk.cta':'Abrir la ruta en Google Maps',
+    'walk.intro':'La ruta panorámica hacia el Coliseo: un recorrido que atraviesa dos mil años de historia con paradas golosas imposibles de rechazar.',
+    'walk.direct':'Ruta directa, sin paradas: Via Bibbiana → Viale Manzoni → Via Labicana · 20 min',
+    'walk.total':'Tiempo total (con paradas)','walk.cta':'Abrir la ruta en Google Maps',
     'walk.directions':'Abrir indicaciones',
     'ftr.closing':'Para cualquier cosa, estamos aquí.',
     'ui.iconic':'Icónico','ui.favourite':'El favorito del barrio',
@@ -483,8 +488,9 @@ const I18N = {
     'sweet.maritozzo':'Und für den berühmtesten Maritozzo Roms',
     'serv.eyebrow':'Praktisches','serv.laundry':'Wäscherei','serv.pharmacy':'Apotheke',
     'walk.eyebrow':'Der Signature-Spaziergang','walk.title':'Zu Fuß zum Kolosseum',
-    'walk.intro':'20 Minuten von unserer Tür zum Kolosseum. Ein Spaziergang durch zweitausend Jahre Geschichte mit zwei unverzichtbaren Genuss-Stopps.',
-    'walk.total':'Gesamtzeit','walk.cta':'Vollständige Route in Google Maps öffnen',
+    'walk.intro':'Die malerische Route zum Kolosseum: ein Spaziergang durch zweitausend Jahre Geschichte mit unverzichtbaren Genuss-Stopps unterwegs.',
+    'walk.direct':'Direkte Route, ohne Stopps: Via Bibbiana → Viale Manzoni → Via Labicana · 20 Min.',
+    'walk.total':'Gesamtzeit (mit Stopps)','walk.cta':'Vollständige Route in Google Maps öffnen',
     'walk.directions':'Wegbeschreibung öffnen',
     'ftr.closing':'Für alles andere sind wir da.',
     'ui.iconic':'Ikonisch','ui.favourite':'Der Liebling des Viertels',
@@ -534,8 +540,9 @@ const I18N = {
     'sweet.maritozzo':'И самый знаменитый маритоццо Рима',
     'serv.eyebrow':'Практичное','serv.laundry':'Прачечная','serv.pharmacy':'Аптека',
     'walk.eyebrow':'Авторский маршрут','walk.title':'К Колизею пешком',
-    'walk.intro':'20 минут от нашей двери до Колизея. Маршрут сквозь две тысячи лет истории с двумя неотразимыми гастрономическими остановками.',
-    'walk.total':'Общее время','walk.cta':'Открыть маршрут в Google Maps',
+    'walk.intro':'Живописный маршрут к Колизею: путь сквозь две тысячи лет истории с неотразимыми гастрономическими остановками.',
+    'walk.direct':'Прямой маршрут, без остановок: Via Bibbiana → Viale Manzoni → Via Labicana · 20 мин',
+    'walk.total':'Общее время (с остановками)','walk.cta':'Открыть маршрут в Google Maps',
     'walk.directions':'Открыть маршрут',
     'ftr.closing':'По любому вопросу мы рядом.',
     'ui.iconic':'Знаковое','ui.favourite':'Любимое место района',
@@ -638,29 +645,21 @@ const POI = {
     { num:'01', time:'0 min', type:'start',
       title:{it:'Via dei Latini 40', en:'Via dei Latini 40', fr:'Via dei Latini 40', es:'Via dei Latini 40', de:'Via dei Latini 40', ru:'Via dei Latini 40'},
       d:{it:"Si esce dall'appartamento e si gira a destra su Via dei Volsci, poi sinistra su Via Tiburtina.", en:'Leave the apartment, turn right onto Via dei Volsci, then left onto Via Tiburtina.', fr:"Sortez de l'appartement, tournez à droite sur Via dei Volsci, puis à gauche sur Via Tiburtina.", es:'Salgan del apartamento, derecha en Via dei Volsci, luego izquierda en Via Tiburtina.', de:'Wohnung verlassen, rechts in Via dei Volsci, dann links in Via Tiburtina.', ru:'Выходите из квартиры, направо на Via dei Volsci, затем налево на Via Tiburtina.'} },
-    { num:'02', time:'5 min', type:'stop',
-      title:{it:'Porta Tiburtina', en:'Porta Tiburtina', fr:'Porta Tiburtina', es:'Porta Tiburtina', de:'Porta Tiburtina', ru:'Порта Тибуртина'},
-      d:{it:"Una delle porte delle Mura Aureliane (III sec. d.C.), ancora intatta. Ci si passa sotto: dall'altra parte si è fuori dalla Roma antica.", en:'One of the gates of the Aurelian Walls (3rd c. AD), still intact. Pass beneath: the other side is outside ancient Rome.', fr:"Une des portes des Murs auréliens (IIIe s.), encore intacte. Passez dessous : de l'autre côté, on quitte la Rome antique.", es:'Una de las puertas de las Murallas Aurelianas (s. III), aún intacta. Pasen debajo: del otro lado se sale de la Roma antigua.', de:'Eines der Tore der Aurelianischen Mauer (3. Jh.), noch intakt. Hindurchgehen: dort verlässt man das antike Rom.', ru:'Одни из ворот Аврелиановой стены (III в.), сохранились. Пройдите под ними — там уже не древний Рим.'} },
-    { num:'03', time:'8 min', type:'stop',
-      title:{it:'Via Bibbiana / Largo Bibbiena', en:'Via Bibbiana / Largo Bibbiena', fr:'Via Bibbiana / Largo Bibbiena', es:'Via Bibbiana / Largo Bibbiena', de:'Via Bibbiana / Largo Bibbiena', ru:'Via Bibbiana / Largo Bibbiena'},
-      d:{it:'Si imbocca la traversa che porta verso Porta Maggiore. Il quartiere cambia carattere: dai ragazzi di San Lorenzo agli echi imperiali.', en:"Take the side street towards Porta Maggiore. The neighbourhood character shifts from San Lorenzo's youthful energy to imperial echoes.", fr:"Empruntez la rue qui mène à Porta Maggiore. L'ambiance change : de la jeunesse de San Lorenzo aux échos impériaux.", es:'Tomen la calle hacia Porta Maggiore. El barrio cambia de carácter: de la juventud de San Lorenzo a los ecos imperiales.', de:'Seitenstraße Richtung Porta Maggiore nehmen. Das Viertel wechselt: von San Lorenzos Jugend zu kaiserlichen Echos.', ru:'Сверните на улочку к Порта Маджоре. Характер района меняется — от молодёжи Сан-Лоренцо к имперскому эху.'} },
-    { num:'04', time:'10 min', type:'stop',
-      title:{it:'Porta Maggiore', en:'Porta Maggiore', fr:'Porta Maggiore', es:'Porta Maggiore', de:'Porta Maggiore', ru:'Порта Маджоре'},
-      d:{it:"Imponente arco del 52 d.C. dell'imperatore Claudio, con due acquedotti incorporati. Sotto, la tomba del fornaio Eurisace.", en:'Imposing arch from AD 52 by Emperor Claudius, with two aqueducts built in. Below, the tomb of the baker Eurysaces.', fr:"Arche imposante de 52 ap. J.-C. de l'empereur Claude, avec deux aqueducs intégrés. Dessous, le tombeau du boulanger Eurysacès.", es:'Arco imponente del 52 d.C. del emperador Claudio, con dos acueductos incorporados. Debajo, la tumba del panadero Eurísaces.', de:'Imposanter Bogen von 52 n. Chr. unter Kaiser Claudius, mit zwei eingebauten Aquädukten. Darunter das Grab des Bäckers Eurysaces.', ru:'Арка 52 г. н.э. императора Клавдия с двумя встроенными акведуками. Под ней — гробница пекаря Эврисака.'} },
-    { num:'05', time:'13 min', type:'treat',
-      title:{it:'★ Palazzo del Freddo Fassi', en:'★ Palazzo del Freddo Fassi', fr:'★ Palazzo del Freddo Fassi', es:'★ Palazzo del Freddo Fassi', de:'★ Palazzo del Freddo Fassi', ru:'★ Palazzo del Freddo Fassi'},
-      d:{it:'PRIMA TAPPA GOLOSA. Piccola deviazione su Via Principe Eugenio: la gelateria romana dal 1880. Pistacchio + panna è la combinazione storica.', en:'FIRST FOOD STOP. Brief detour onto Via Principe Eugenio: the Roman gelateria since 1880. Pistachio + whipped cream is the historic combo.', fr:"PREMIÈRE ÉTAPE GOURMANDE. Petit détour sur Via Principe Eugenio : le glacier romain depuis 1880. Pistache + chantilly, l'incontournable.", es:'PRIMERA PARADA GOLOSA. Pequeño desvío por Via Principe Eugenio: la heladería romana desde 1880. Pistacho + crema, la combinación clásica.', de:'ERSTER GENUSS-STOPP. Kleiner Umweg über Via Principe Eugenio: die römische Eisdiele seit 1880. Pistazie + Sahne ist der Klassiker.', ru:'ПЕРВАЯ ВКУСНАЯ ОСТАНОВКА. Небольшой крюк по Via Principe Eugenio — римская джелатерия с 1880 года. Фисташка + сливки — классика.'},
-      link:'ChIJhaEc9VlhLxMR-2YrmpIvm8s' },
-    { num:'06', time:'20 min', type:'treat',
+    { num:'02', time:'10 min', type:'stop',
+      title:{it:'Basilica di Santa Maria Maggiore', en:'Basilica of Saint Mary Major', fr:'Basilique Sainte-Marie-Majeure', es:'Basílica de Santa María la Mayor', de:'Basilika Santa Maria Maggiore', ru:'Базилика Санта-Мария-Маджоре'},
+      d:{it:"Una delle quattro basiliche papali di Roma, dove è sepolto Papa Francesco (Bergoglio). Consigliata la visita ai sotterranei/scavi archeologici sotto la basilica.", en:'One of Rome\u2019s four papal basilicas, and the burial place of Pope Francis (Bergoglio). We recommend visiting the underground excavations beneath the basilica.', fr:"L'une des quatre basiliques papales de Rome, où repose le pape François (Bergoglio). Nous recommandons la visite des fouilles souterraines sous la basilique.", es:'Una de las cuatro basílicas papales de Roma, donde está sepultado el Papa Francisco (Bergoglio). Recomendamos visitar las excavaciones subterráneas bajo la basílica.', de:'Eine der vier päpstlichen Basiliken Roms, Grabstätte von Papst Franziskus (Bergoglio). Empfehlenswert ist der Besuch der unterirdischen Ausgrabungen unter der Basilika.', ru:'Одна из четырёх папских базилик Рима, место погребения Папы Франциска (Бергольо). Рекомендуем посетить подземные раскопки под базиликой.'},
+      link:'ChIJ1zB926RhLxMRejWMj_tUs_c' },
+    { num:'03', time:'18 min', type:'treat',
       title:{it:'★ Pasticceria Regoli', en:'★ Pasticceria Regoli', fr:'★ Pasticceria Regoli', es:'★ Pasticceria Regoli', de:'★ Pasticceria Regoli', ru:'★ Pasticceria Regoli'},
-      d:{it:'SECONDA TAPPA GOLOSA. Via dello Statuto 60: il maritozzo più amato di Roma. Si fa la fila — vale la pena. (Chiuso il martedì.)', en:"SECOND FOOD STOP. Via dello Statuto 60: Rome's most loved maritozzo. Yes there's a queue — yes it's worth it. (Closed Tuesdays.)", fr:'DEUXIÈME ÉTAPE GOURMANDE. Via dello Statuto 60 : le maritozzo le plus aimé de Rome. Il y a la queue — ça en vaut la peine. (Fermé le mardi.)', es:'SEGUNDA PARADA GOLOSA. Via dello Statuto 60: el maritozzo más querido de Roma. Hay cola — vale la pena. (Cerrado los martes.)', de:'ZWEITER GENUSS-STOPP. Via dello Statuto 60: Roms beliebtester Maritozzo. Ja, eine Schlange — sie lohnt sich. (Dienstags geschlossen.)', ru:'ВТОРАЯ ВКУСНАЯ ОСТАНОВКА. Via dello Statuto 60 — самый любимый маритоццо Рима. Очередь есть, но того стоит. (Вторник — выходной.)'},
+      d:{it:'TAPPA GOLOSA. Via dello Statuto 60: il maritozzo più amato di Roma. Si fa la fila — vale la pena. (Chiuso il martedì.)', en:"FOOD STOP. Via dello Statuto 60: Rome's most loved maritozzo. Yes there's a queue — yes it's worth it. (Closed Tuesdays.)", fr:'ÉTAPE GOURMANDE. Via dello Statuto 60 : le maritozzo le plus aimé de Rome. Il y a la queue — ça en vaut la peine. (Fermé le mardi.)', es:'PARADA GOLOSA. Via dello Statuto 60: el maritozzo más querido de Roma. Hay cola — vale la pena. (Cerrado los martes.)', de:'GENUSS-STOPP. Via dello Statuto 60: Roms beliebtester Maritozzo. Ja, eine Schlange — sie lohnt sich. (Dienstags geschlossen.)', ru:'ВКУСНАЯ ОСТАНОВКА. Via dello Statuto 60 — самый любимый маритоццо Рима. Очередь есть, но того стоит. (Вторник — выходной.)'},
       link:'ChIJC978ZrthLxMRzYBNfksMM4A' },
-    { num:'07', time:'25 min', type:'stop',
-      title:{it:'Via Merulana / San Clemente', en:'Via Merulana / San Clemente', fr:'Via Merulana / San Clemente', es:'Via Merulana / San Clemente', de:'Via Merulana / San Clemente', ru:'Via Merulana / Сан-Клементе'},
-      d:{it:'Si scende verso Via Labicana. Tappa segreta consigliata: la Basilica di San Clemente, tre chiese sovrapposte (XII sec. + IV sec. + tempio mitraico).', en:'Walk down towards Via Labicana. Secret stop we recommend: the Basilica of San Clemente, three churches stacked (12th c. + 4th c. + Mithraic temple).', fr:'Descendez vers Via Labicana. Étape secrète : la Basilique San Clemente, trois églises superposées (XIIe + IVe siècle + temple mithriaque).', es:'Bajen hacia Via Labicana. Parada secreta: la Basílica de San Clemente, tres iglesias superpuestas (s. XII + s. IV + templo mitraico).', de:'Hinunter Richtung Via Labicana. Geheimer Tipp: Basilika San Clemente, drei übereinandergeschichtete Kirchen (12. + 4. Jh. + Mithras-Tempel).', ru:'Спуститесь к Via Labicana. Секретная остановка: базилика Сан-Клементе — три храма друг над другом (XII в. + IV в. + храм Митры).'} },
-    { num:'08', time:'30 min', type:'end',
+    { num:'04', time:'22 min', type:'treat',
+      title:{it:'★ Palazzo del Freddo Fassi (se è pomeriggio)', en:'★ Palazzo del Freddo Fassi (afternoons only)', fr:'★ Palazzo del Freddo Fassi (l\u2019après-midi)', es:'★ Palazzo del Freddo Fassi (por la tarde)', de:'★ Palazzo del Freddo Fassi (nachmittags)', ru:'★ Palazzo del Freddo Fassi (только днём)'},
+      d:{it:"TAPPA GOLOSA BONUS, sullo stesso lato della strada. Se ci passate nel pomeriggio, deviazione su Via Principe Eugenio: la gelateria romana dal 1880. Pistacchio + panna è la combinazione storica.", en:'BONUS FOOD STOP, on the same side of the street. If you\u2019re passing by in the afternoon, detour onto Via Principe Eugenio: the Roman gelateria since 1880. Pistachio + whipped cream is the historic combo.', fr:"ÉTAPE GOURMANDE BONUS, du même côté de la rue. Si vous passez l'après-midi, petit détour sur Via Principe Eugenio : le glacier romain depuis 1880. Pistache + chantilly, l'incontournable.", es:'PARADA GOLOSA EXTRA, en el mismo lado de la calle. Si pasan por la tarde, desvío por Via Principe Eugenio: la heladería romana desde 1880. Pistacho + crema, la combinación clásica.', de:'BONUS-GENUSS-STOPP auf derselben Straßenseite. Wenn Sie nachmittags vorbeikommen: kleiner Umweg über Via Principe Eugenio, die römische Eisdiele seit 1880. Pistazie + Sahne ist der Klassiker.', ru:'ДОПОЛНИТЕЛЬНАЯ ОСТАНОВКА на той же стороне улицы. Если вы окажетесь здесь днём — небольшой крюк по Via Principe Eugenio, римская джелатерия с 1880 года. Фисташка + сливки — классика.'},
+      link:'ChIJhaEc9VlhLxMR-2YrmpIvm8s' },
+    { num:'05', time:'30 min', type:'end',
       title:{it:'Il Colosseo', en:'The Colosseum', fr:'Le Colisée', es:'El Coliseo', de:'Das Kolosseum', ru:'Колизей'},
-      d:{it:"Eccolo. Anfiteatro Flavio, 80 d.C. Suggerimento: da qui prendete la Metro C alla nuovissima stazione Colosseo–Fori Imperiali per ammirare l'archeo-stazione, poi tornate a casa con la Metro B fino a Termini.", en:'Here it is. Flavian Amphitheatre, AD 80. Tip: from here, take Metro C at the brand-new Colosseo–Fori Imperiali station to see the museum-station, then ride Metro B back to Termini.', fr:"Le voici. Amphithéâtre Flavien, 80 ap. J.-C. Astuce : prenez le métro C à la toute nouvelle station Colosseo–Fori Imperiali, puis le métro B retour vers Termini.", es:'Aquí está. Anfiteatro Flavio, 80 d.C. Tip: tomen el Metro C en la nueva estación Colosseo–Fori Imperiali para ver la arqueo-estación, luego Metro B de regreso a Termini.', de:'Hier ist es. Flavisches Amphitheater, 80 n. Chr. Tipp: Metro C an der neuen Station Colosseo–Fori Imperiali nehmen, um die Museumsstation zu sehen, dann Metro B zurück nach Termini.', ru:'Вот он. Амфитеатр Флавиев, 80 г. н.э. Совет: садитесь на метро C на новой станции Colosseo–Fori Imperiali — посмотрите станцию-музей, потом метро B обратно до Термини.'} },
+      d:{it:"Eccolo. Anfiteatro Flavio, 80 d.C. Suggerimento: da qui prendete la Metro C alla nuovissima stazione Colosseo–Fori Imperiali (vale la visita, basta il costo di un biglietto della metro) per ammirare l'archeo-stazione. Con lo stesso biglietto, senza pagarne un altro, potete proseguire sulla Metro A (cambio a San Giovanni) e scendere a Vittorio Emanuele, più vicina a casa — oppure prendere un bus o un tram, sempre coperti dallo stesso biglietto.", en:'Here it is. Flavian Amphitheatre, AD 80. Tip: from here, take Metro C at the brand-new Colosseo–Fori Imperiali station (well worth it, just the cost of a metro ticket) to see the museum-station. With the same ticket, no need to pay again, you can continue on Metro A (change at San Giovanni) and get off at Vittorio Emanuele, closer to the apartment — or hop on a bus or tram, also covered by the same ticket.', fr:"Le voici. Amphithéâtre Flavien, 80 ap. J.-C. Astuce : prenez le métro C à la toute nouvelle station Colosseo–Fori Imperiali (elle vaut la visite, pour le prix d'un simple ticket de métro), pour admirer l'archéo-station. Avec le même ticket, sans en repayer un autre, vous pouvez continuer sur le métro A (changement à San Giovanni) et descendre à Vittorio Emanuele, plus proche de l'appartement — ou prendre un bus ou un tram, également couverts par le même ticket.", es:'Aquí está. Anfiteatro Flavio, 80 d.C. Tip: tomen el Metro C en la nueva estación Colosseo–Fori Imperiali (vale la pena, solo cuesta un billete de metro) para ver la arqueo-estación. Con el mismo billete, sin pagar otro, pueden continuar en el Metro A (cambio en San Giovanni) y bajarse en Vittorio Emanuele, más cerca del apartamento — o tomar un autobús o un tranvía, también cubiertos por el mismo billete.', de:'Hier ist es. Flavisches Amphitheater, 80 n. Chr. Tipp: Metro C an der neuen Station Colosseo–Fori Imperiali nehmen (lohnt sich, kostet nur eine Metro-Fahrkarte), um die Museumsstation zu sehen. Mit demselben Ticket, ohne erneut zu bezahlen, können Sie mit der Metro A weiterfahren (Umsteigen in San Giovanni) und bei Vittorio Emanuele aussteigen, näher an der Wohnung — oder Bus oder Tram nehmen, ebenfalls mit demselben Ticket gültig.', ru:'Вот он. Амфитеатр Флавиев, 80 г. н.э. Совет: садитесь на метро C на новой станции Colosseo–Fori Imperiali (стоит того, всего за один билет на метро) — посмотрите станцию-музей. По тому же билету, не оплачивая заново, можно продолжить на метро A (пересадка на San Giovanni) и выйти на Vittorio Emanuele, ближе к квартире — или сесть на автобус или трамвай, тоже по тому же билету.'} },
   ]
 };
 
