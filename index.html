@@ -197,7 +197,7 @@ footer .stamp{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color
 <p data-i18n="info.recycle.note" style="font-size:13px;color:#3D3D3D;margin-bottom:10px"></p>
 <p class="card-tip" data-i18n="info.recycle.location"></p>
 <div class="card-actions">
-<a class="btn btn-primary gold" href="https://www.google.com/maps/search/?api=1&query=UniCredit+Via+Tiburtina+Roma&query_place_id=ChIJIcEdxpthLxMRklbe4AinVLo" target="_blank" rel="noopener"><span data-i18n="info.recycle.cta"></span></a>
+<a class="btn btn-primary gold" href="https://www.google.com/maps/search/?api=1&query=41.8982677,12.5135382" target="_blank" rel="noopener"><span data-i18n="info.recycle.cta"></span></a>
 </div>
 </div>
 </div>
@@ -231,7 +231,7 @@ footer .stamp{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color
 <section class="section" id="eat"><div class="section-header"><p class="eyebrow" data-i18n="eat.eyebrow"></p><h2 data-i18n="eat.title"></h2></div><div class="cards" id="eat-cards"></div><div class="subsection"><h3 class="subsection-title" data-i18n="eat.pizza"></h3><div class="cards" id="pizza-cards"></div></div></section>
 <section class="section" id="sweet"><div class="section-header"><p class="eyebrow" data-i18n="sweet.eyebrow"></p><h2 data-i18n="sweet.title"></h2></div><p style="text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:#6B5B3F;max-width:600px;margin:0 auto 32px" data-i18n="sweet.intro"></p><div class="cards" id="gelato-cards"></div><div class="subsection"><h3 class="subsection-title" data-i18n="sweet.maritozzo"></h3><div class="cards" id="pastry-cards" style="max-width:480px;margin:0 auto;grid-template-columns:1fr"></div></div></section>
 <section class="section" id="services"><div class="section-header"><p class="eyebrow" data-i18n="serv.eyebrow"></p><h2 data-i18n="serv.laundry"></h2></div><div class="cards" id="laundry-cards"></div><div class="subsection"><h3 class="subsection-title" data-i18n="serv.pharmacy"></h3><div class="cards" id="pharmacy-cards"></div></div></section>
-<section class="section" id="walk"><div class="section-header"><p class="eyebrow" data-i18n="walk.eyebrow"></p><h2 data-i18n="walk.title"></h2></div><div class="walk-intro"><p data-i18n="walk.intro"></p><p class="direct-route" data-i18n="walk.direct"></p><div class="gold-line"></div><p class="total"><span data-i18n="walk.total"></span> · 30 min</p></div><ol class="walk-list" id="walk-steps"></ol><div class="walk-cta"><a href="https://www.google.com/maps/dir/?api=1&origin=Via+dei+Latini+40,+Roma&destination_place_id=ChIJrRMgU7ZhLxMRxAOFkC7I8Sg&travelmode=walking" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="4" cy="6.5" r=".5" fill="currentColor"/><path d="m16 20 3-1 1-7-6-2"/><path d="m16 20-2-7-2.5-1c-1-.4-1-2 0-2.4l4-1.6 4 2 2 1"/><circle cx="13" cy="3.5" r="1.5"/></svg><span data-i18n="walk.cta"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:11px;height:11px"><path d="M15 3h6v6M10 14 21 3M21 14v7H3V3h7"/></svg></a></div></section>
+<section class="section" id="walk"><div class="section-header"><p class="eyebrow" data-i18n="walk.eyebrow"></p><h2 data-i18n="walk.title"></h2></div><div class="walk-intro"><p data-i18n="walk.intro"></p><p class="direct-route" data-i18n="walk.direct"></p><div class="gold-line"></div><p class="total"><span data-i18n="walk.total"></span> · 30 min</p></div><ol class="walk-list" id="walk-steps"></ol><div class="walk-cta"><a href="https://www.google.com/maps/dir/?api=1&origin=Via+dei+Latini+40,+Roma&destination=41.8902102,12.4922309&travelmode=walking" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="4" cy="6.5" r=".5" fill="currentColor"/><path d="m16 20 3-1 1-7-6-2"/><path d="m16 20-2-7-2.5-1c-1-.4-1-2 0-2.4l4-1.6 4 2 2 1"/><circle cx="13" cy="3.5" r="1.5"/></svg><span data-i18n="walk.cta"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:11px;height:11px"><path d="M15 3h6v6M10 14 21 3M21 14v7H3V3h7"/></svg></a></div></section>
 </main>
 <footer><p class="closing" data-i18n="ftr.closing"></p><p class="stamp">Giancarla Luxury Apartment · Roma San Lorenzo</p></footer>
 <script>
@@ -560,94 +560,94 @@ const I18N = {
 // ============= POI DATA (multilingual) =============
 const POI = {
   shop: [
-    { n:'Todis', a:'Via dei Volsci 70', m:1, r:4.1, id:'ChIJZ1h9ppthLxMRjn8eMYOjia0', p:'06 495 7507',
+    { n:'Todis', a:'Via dei Volsci 70', m:1, r:4.1, id:'ChIJZ1h9ppthLxMRjn8eMYOjia0', lat:41.8977089, lng:12.5152441, p:'06 495 7507',
       h:{it:'Lun–Sab 8:00–21:00 · Dom 8:30–21:00', en:'Mon–Sat 8:00–21:00 · Sun 8:30–21:00', fr:'Lun–Sam 8h–21h · Dim 8h30–21h', es:'Lun–Sáb 8:00–21:00 · Dom 8:30–21:00', de:'Mo–Sa 8–21 · So 8:30–21', ru:'Пн–Сб 8:00–21:00 · Вс 8:30–21:00'},
       t:{it:'Il più vicino in assoluto. Buoni salumi e prezzi onesti.', en:'The closest one. Good cured meats and fair prices.', fr:'Le plus proche. Bonne charcuterie et prix honnêtes.', es:'El más cercano. Buenos embutidos y precios justos.', de:'Der nächstgelegene. Gute Wurstwaren und faire Preise.', ru:'Самый близкий. Хорошие колбасы и честные цены.'} },
-    { n:'Mercato di San Lorenzo', a:'Largo degli Osci', m:3, r:4.0, id:'ChIJJdGjSpphLxMRM0EO-4UvoAM', iconic:true,
+    { n:'Mercato di San Lorenzo', a:'Largo degli Osci', m:3, r:4.0, id:'ChIJJdGjSpphLxMRM0EO-4UvoAM', lat:41.8971574, lng:12.514052, iconic:true,
       h:{it:'Mar–Sab 7:30–14:00 · Lun e Dom chiuso', en:'Tue–Sat 7:30–14:00 · Closed Mon & Sun', fr:'Mar–Sam 7h30–14h · Fermé Lun et Dim', es:'Mar–Sáb 7:30–14:00 · Cerrado Lun y Dom', de:'Di–Sa 7:30–14 · Mo und So geschlossen', ru:'Вт–Сб 7:30–14:00 · Пн и Вс закрыто'},
       t:{it:'★ Mercato rionale storico: frutta e verdura freschissime e un paio di ottimi banchi di pesce fresco.', en:'★ Historic neighbourhood market: very fresh fruit and vegetables, and a couple of excellent fresh fish stalls.', fr:'★ Marché de quartier historique : fruits et légumes très frais, et quelques excellents étals de poisson frais.', es:'★ Mercado de barrio histórico: fruta y verdura muy frescas, y un par de excelentes puestos de pescado fresco.', de:'★ Historischer Viertelmarkt: sehr frisches Obst und Gemüse sowie ein paar ausgezeichnete Fischstände.', ru:'★ Исторический районный рынок: очень свежие фрукты и овощи, а также пара отличных прилавков со свежей рыбой.'} },
-    { n:"iN's Mercato", a:'Via Tiburtina 97', m:2, r:4.0, id:'ChIJl3eS7q9hLxMRMOeNZoP-tTs', p:'340 116 8403',
+    { n:"iN's Mercato", a:'Via Tiburtina 97', m:2, r:4.0, id:'ChIJl3eS7q9hLxMRMOeNZoP-tTs', lat:41.898353, lng:12.513961, p:'340 116 8403',
       h:{it:'Lun–Sab 8:00–20:00', en:'Mon–Sat 8:00–20:00', fr:'Lun–Sam 8h–20h', es:'Lun–Sáb 8:00–20:00', de:'Mo–Sa 8–20', ru:'Пн–Сб 8:00–20:00'},
       t:{it:'Discount: prezzi bassissimi per le essenziali.', en:'Discount store with rock-bottom prices on essentials.', fr:'Discount, prix très bas sur l\'essentiel.', es:'Tienda discount con precios bajísimos.', de:'Discounter mit sehr niedrigen Preisen.', ru:'Дискаунтер, очень низкие цены.'} },
-    { n:'Supermercato Elite', a:'Via Tiburtina 106', m:2, r:4.0, id:'ChIJfTmsv5thLxMRvpz2r3TjrmQ', p:'06 4470 4077',
+    { n:'Supermercato Elite', a:'Via Tiburtina 106', m:2, r:4.0, id:'ChIJfTmsv5thLxMRvpz2r3TjrmQ', lat:41.8983085, lng:12.5144519, p:'06 4470 4077',
       h:{it:'Lun–Sab 8:00–20:00 · Dom mattina', en:'Mon–Sat 8:00–20:00 · Sun morning', fr:'Lun–Sam 8h–20h · Dim matin', es:'Lun–Sáb 8:00–20:00 · Dom mañana', de:'Mo–Sa 8–20 · So Vormittag', ru:'Пн–Сб 8:00–20:00 · Вс утром'},
       t:{it:'Pane fresco e ottima salumeria al banco.', en:'Fresh bread and great deli counter.', fr:'Pain frais et excellent rayon charcuterie.', es:'Pan fresco y excelente charcutería.', de:'Frisches Brot und Wursttheke.', ru:'Свежий хлеб и отличная колбасная стойка.'} },
-    { n:'Carrefour Market', a:'Via dei Sabelli 125', m:4, r:3.8, id:'ChIJrU0vPpthLxMRTjDwnphTGow', p:'06 446 2485',
+    { n:'Carrefour Market', a:'Via dei Sabelli 125', m:4, r:3.8, id:'ChIJrU0vPpthLxMRTjDwnphTGow', lat:41.8979848, lng:12.5170541, p:'06 446 2485',
       h:{it:'Tutti i giorni 7:00–01:00', en:'Open daily 7:00–01:00', fr:'Tous les jours 7h–1h', es:'Todos los días 7:00–01:00', de:'Täglich 7–01', ru:'Ежедневно 7:00–01:00'},
       t:{it:'Aperto fino a notte fonda — perfetto se tornate tardi.', en:'Open till 1am — perfect for late returns.', fr:"Ouvert tard — parfait si vous rentrez tard.", es:'Abierto hasta tarde — perfecto si vuelven tarde.', de:'Bis spät geöffnet — ideal bei spätem Heimkehren.', ru:'Открыт до глубокой ночи — удобно для поздних возвращений.'} },
-    { n:'Conad City', a:'Via dei Liguri 9', m:5, r:3.6, id:'ChIJy53vt5phLxMRtvFBC546B6c', p:'06 444 0558',
+    { n:'Conad City', a:'Via dei Liguri 9', m:5, r:3.6, id:'ChIJy53vt5phLxMRtvFBC546B6c', lat:41.8955605, lng:12.5176691, p:'06 444 0558',
       h:{it:'Lun–Dom 8:00–21:00', en:'Mon–Sun 8:00–21:00', fr:'Lun–Dim 8h–21h', es:'Lun–Dom 8:00–21:00', de:'Mo–So 8–21', ru:'Пн–Вс 8:00–21:00'},
       t:{it:'Forno interno e buona selezione di vini.', en:'In-store bakery and good wine selection.', fr:'Boulangerie interne et belle sélection de vins.', es:'Panadería interna y buena selección de vinos.', de:'Hauseigene Bäckerei und gute Weinauswahl.', ru:'Своя пекарня и хороший выбор вин.'} },
   ],
   eat: [
-    { n:'I Fratelli', a:'Via degli Umbri 14', m:1, r:4.5, rc:2172, pr:'€€', id:'ChIJ_1GnyZthLxMRzVE1g0dxmNQ', p:'06 446 9856',
+    { n:'I Fratelli', a:'Via degli Umbri 14', m:1, r:4.5, rc:2172, pr:'€€', id:'ChIJ_1GnyZthLxMRzVE1g0dxmNQ', lat:41.8975573, lng:12.5138235, p:'06 446 9856',
       h:{it:'Tutti i giorni 12–15 / 19–24', en:'Daily 12–15 / 19–24', fr:'Tous les jours 12h–15h / 19h–24h', es:'Todos los días 12–15 / 19–24', de:'Täglich 12–15 / 19–24', ru:'Ежедневно 12–15 / 19–24'},
       featured:true,
       t:{it:'★ Il preferito del quartiere. Pizza, pasta, dessert: tutto eccellente. Prenotare.', en:'★ Our favourite. Pizza, pasta, dessert — all excellent. Book ahead.', fr:'★ Notre préféré. Pizza, pâtes, dessert — tout est excellent. Réservez.', es:'★ Nuestro favorito. Pizza, pasta, postre — todo excelente. Reservar.', de:'★ Unser Favorit. Pizza, Pasta, Dessert — alles ausgezeichnet. Reservieren.', ru:'★ Наш фаворит. Пицца, паста, десерт — всё отлично. Бронируйте.'} },
-    { n:'Saltimbocca San Lorenzo', a:'Via dei Falisci 1/3', m:2, r:4.6, rc:1604, pr:'€€', id:'ChIJB2yezoRhLxMReDcgrA03PDM', p:'06 4368 8524',
+    { n:'Saltimbocca San Lorenzo', a:'Via dei Falisci 1/3', m:2, r:4.6, rc:1604, pr:'€€', id:'ChIJB2yezoRhLxMReDcgrA03PDM', lat:41.8972131, lng:12.5128316, p:'06 4368 8524',
       h:{it:'Tutti i giorni 11–24', en:'Daily 11–24', fr:'Tous les jours 11h–24h', es:'Todos los días 11–24', de:'Täglich 11–24', ru:'Ежедневно 11–24'},
       t:{it:'Pizza eccellente e spaghetti al polpo da provare. Apre presto.', en:'Excellent pizza and unmissable octopus spaghetti. Opens early.', fr:'Pizza excellente et spaghetti au poulpe à essayer. Ouvre tôt.', es:'Pizza excelente y spaghetti al pulpo para probar. Abre temprano.', de:'Hervorragende Pizza und Tintenfisch-Spaghetti. Öffnet früh.', ru:'Отличная пицца и спагетти с осьминогом. Открывается рано.'} },
-    { n:'Osteria Pesce Fritto e Baccalà', a:'Via dei Falisci 4/8', m:2, r:4.5, rc:1648, pr:'€€', id:'ChIJeyK9K5phLxMRHGL2YzdO2YI', p:'06 6450 1183',
+    { n:'Osteria Pesce Fritto e Baccalà', a:'Via dei Falisci 4/8', m:2, r:4.5, rc:1648, pr:'€€', id:'ChIJeyK9K5phLxMRHGL2YzdO2YI', lat:41.897136, lng:12.512868, p:'06 6450 1183',
       h:{it:'Tutti i giorni 12:00–23:30', en:'Daily 12:00–23:30', fr:'Tous les jours 12h–23h30', es:'Todos los días 12:00–23:30', de:'Täglich 12:00–23:30', ru:'Ежедневно 12:00–23:30'},
       t:{it:'Pesce romano in vicolo illuminato. Atmosfera serale magica.', en:'Roman seafood in a lit alley. Magical evening atmosphere.', fr:'Poisson romain dans une ruelle illuminée. Ambiance magique.', es:'Pescado romano en callejón iluminado. Atmósfera mágica.', de:'Römische Meeresfrüchte in beleuchteter Gasse. Magisch.', ru:'Римские морепродукты в освещённом переулке. Волшебно.'} },
-    { n:'La Trattoriola di Luca', a:'Via degli Equi 18', m:3, r:4.5, rc:1475, pr:'€€', id:'ChIJi-LUhJlhLxMRg-GbCiyC0gc', p:'338 837 0197',
+    { n:'La Trattoriola di Luca', a:'Via degli Equi 18', m:3, r:4.5, rc:1475, pr:'€€', id:'ChIJi-LUhJlhLxMRg-GbCiyC0gc', lat:41.8968234, lng:12.5125245, p:'338 837 0197',
       h:{it:'Cena tutti i giorni · Pranzo Mer–Dom', en:'Dinner daily · Lunch Wed–Sun', fr:'Dîner tous les jours · Déjeuner Mer–Dim', es:'Cena todos los días · Almuerzo Mié–Dom', de:'Abendessen täglich · Mittag Mi–So', ru:'Ужин ежедневно · Обед Ср–Вс'},
       t:{it:'Carbonara la migliore della zona, dicono i regulars.', en:'Best carbonara around, regulars say.', fr:'La meilleure carbonara du coin, selon les habitués.', es:'La mejor carbonara, dicen los habituales.', de:'Beste Carbonara der Gegend, sagen Stammgäste.', ru:'Лучшая карбонара в районе — говорят завсегдатаи.'} },
-    { n:'Osteria da Marcello 1961', a:'Via dei Campani 12', m:4, r:4.5, rc:915, pr:'€€', id:'ChIJ-8fMnpphLxMRssZtgOZMH88', p:'06 446 3311',
+    { n:'Osteria da Marcello 1961', a:'Via dei Campani 12', m:4, r:4.5, rc:915, pr:'€€', id:'ChIJ-8fMnpphLxMRssZtgOZMH88', lat:41.895168, lng:12.514261, p:'06 446 3311',
       h:{it:'Mar–Ven cena · Sab–Dom pranzo+cena', en:'Tue–Fri dinner · Sat–Sun lunch+dinner', fr:'Mar–Ven dîner · Sam–Dim déj+dîner', es:'Mar–Vie cena · Sáb–Dom almuerzo+cena', de:'Di–Fr Abend · Sa–So Mittag+Abend', ru:'Вт–Пт ужин · Сб–Вс обед+ужин'},
       t:{it:'Storico, familiare, fuori dai circuiti turistici. Prenotare.', en:'Historic, family-run, off the tourist trail. Book ahead.', fr:'Historique, familial, hors des sentiers touristiques. Réservez.', es:'Histórico, familiar, fuera de los circuitos turísticos. Reservar.', de:'Historisch, familiengeführt, abseits der Touristenpfade.', ru:'Историческое, семейное, вне туристических троп.'} },
-    { n:'Pasquino San Lorenzo', a:'Piazzale Tiburtino 17', m:5, r:4.5, rc:750, pr:'€€', id:'ChIJX1glmplhLxMRZ41TINIhol4', p:'06 446 1496',
+    { n:'Pasquino San Lorenzo', a:'Piazzale Tiburtino 17', m:5, r:4.5, rc:750, pr:'€€', id:'ChIJX1glmplhLxMRZ41TINIhol4', lat:41.8968522, lng:12.5118431, p:'06 446 1496',
       h:{it:'Mar chiuso · 12:30–15 / 19–23', en:'Closed Tue · 12:30–15 / 19–23', fr:'Fermé Mar · 12h30–15h / 19h–23h', es:'Cerrado Mar · 12:30–15 / 19–23', de:'Di geschl. · 12:30–15 / 19–23', ru:'Вт закрыто · 12:30–15 / 19–23'},
       t:{it:'Pesce fresco e amatriciana di pasta corta.', en:'Fresh seafood and short-pasta amatriciana.', fr:'Poisson frais et amatriciana aux pâtes courtes.', es:'Pescado fresco y amatriciana con pasta corta.', de:'Frischer Fisch und Amatriciana mit kurzer Pasta.', ru:'Свежая рыба и аматричана с короткой пастой.'} },
-    { n:'Osteria A Piedi Pari', a:'Via dei Volsci 82', m:3, r:4.4, rc:1693, pr:'€', id:'ChIJ71AtcpthLxMRddlXi5G7beo', p:'06 445 4226',
+    { n:'Osteria A Piedi Pari', a:'Via dei Volsci 82', m:3, r:4.4, rc:1693, pr:'€', id:'ChIJ71AtcpthLxMRddlXi5G7beo', lat:41.8979948, lng:12.5154157, p:'06 445 4226',
       h:{it:'Tutti i giorni 12–15 / 18:30–23', en:'Daily 12–15 / 18:30–23', fr:'Tous les jours 12h–15h / 18h30–23h', es:'Todos los días 12–15 / 18:30–23', de:'Täglich 12–15 / 18:30–23', ru:'Ежедневно 12–15 / 18:30–23'},
       t:{it:'Cinematografico, prezzi onesti, ottima carbonara.', en:'Movie-poster walls, fair prices, great carbonara.', fr:'Murs façon cinéma, prix honnêtes, excellente carbonara.', es:'Decoración cinematográfica, precios justos, gran carbonara.', de:'Kino-Ambiente, faire Preise, hervorragende Carbonara.', ru:'Атмосфера кино, честные цены, отличная карбонара.'} },
   ],
   pizza: [
-    { n:'Saporito San Lorenzo', a:'Via Tiburtina 141', m:3, r:4.5, id:'ChIJk2nd9AphLxMREKXtZfwEezE', p:'06 4567 5240',
+    { n:'Saporito San Lorenzo', a:'Via Tiburtina 141', m:3, r:4.5, id:'ChIJk2nd9AphLxMREKXtZfwEezE', lat:41.899294, lng:12.5152736, p:'06 4567 5240',
       h:{it:'Lun–Gio 12–23:30', en:'Mon–Thu 12–23:30', fr:'Lun–Jeu 12h–23h30', es:'Lun–Jue 12–23:30', de:'Mo–Do 12–23:30', ru:'Пн–Чт 12–23:30'},
       t:{it:'Pizza romana sottile, atmosfera giovane.', en:'Thin Roman-style pizza, youthful vibe.', fr:'Pizza romaine fine, ambiance jeune.', es:'Pizza romana fina, ambiente joven.', de:'Dünne römische Pizza, junge Atmosphäre.', ru:'Тонкая римская пицца, молодёжная атмосфера.'} },
-    { n:'Alice Pizza al taglio', a:'Via Tiburtina 170', m:3, r:4.4, id:'ChIJT1FeeJthLxMRvo5o1KFVRCE', p:'06 3107 5075',
+    { n:'Alice Pizza al taglio', a:'Via Tiburtina 170', m:3, r:4.4, id:'ChIJT1FeeJthLxMRvo5o1KFVRCE', lat:41.8989751, lng:12.5156636, p:'06 3107 5075',
       h:{it:'Tutti i giorni 10:00–24:00', en:'Daily 10:00–24:00', fr:'Tous les jours 10h–24h', es:'Todos los días 10:00–24:00', de:'Täglich 10–24', ru:'Ежедневно 10:00–24:00'},
       t:{it:'Pizza al taglio: veloce, croccante, perfetta per pranzo.', en:'Pizza by the slice: fast, crispy, perfect for lunch.', fr:"Pizza à la coupe : rapide, croustillante, parfaite pour le déjeuner.", es:'Pizza al corte: rápida, crujiente, perfecta para almuerzo.', de:'Pizza am Stück: schnell, knusprig, perfekt zum Mittagessen.', ru:'Пицца на вес: быстро, хрустяще, идеально для обеда.'} },
-    { n:'Berberè', a:'Viale Scalo S. Lorenzo 10', m:11, r:4.4, id:'ChIJM3mfZjxhLxMR6G-DsF7969I', p:'06 8587 4176',
+    { n:'Berberè', a:'Viale Scalo S. Lorenzo 10', m:11, r:4.4, id:'ChIJM3mfZjxhLxMR6G-DsF7969I', lat:41.8932972, lng:12.5172898, p:'06 8587 4176',
       h:{it:'Tutti i giorni 12:00–23:00', en:'Daily 12:00–23:00', fr:'Tous les jours 12h–23h', es:'Todos los días 12:00–23:00', de:'Täglich 12–23', ru:'Ежедневно 12:00–23:00'},
       t:{it:"Lievitazione 24h, ingredienti d'autore. Vale i 10 minuti a piedi.", en:'24h leavening, premium ingredients. Worth the 10-min walk.', fr:'Levée 24h, ingrédients de qualité. Vaut les 10 min de marche.', es:'Fermentación 24h, ingredientes de autor. Vale los 10 min a pie.', de:'24-Std-Teigführung, Premium-Zutaten. 10 Min Fußweg lohnen sich.', ru:'24-часовое брожение, авторские ингредиенты. 10 мин пешком того стоят.'} },
   ],
   gelato: [
-    { n:'Palazzo del Freddo Fassi', a:'Via Principe Eugenio 65', m:10, r:4.6, rc:10991, id:'ChIJhaEc9VlhLxMR-2YrmpIvm8s', p:'06 446 4740',
+    { n:'Palazzo del Freddo Fassi', a:'Via Principe Eugenio 65', m:10, r:4.6, rc:10991, id:'ChIJhaEc9VlhLxMR-2YrmpIvm8s', lat:41.8935957, lng:12.5080897, p:'06 446 4740',
       h:{it:'Tutti i giorni 12–24 (Dom dalle 10)', en:'Daily 12–24 (Sun from 10)', fr:'Tous les jours 12h–24h (Dim dès 10h)', es:'Todos los días 12–24 (Dom desde 10)', de:'Täglich 12–24 (So ab 10)', ru:'Ежедневно 12–24 (Вс с 10)'},
       iconic:true,
-      t:{it:'★ Gelateria dal 1880. Istituzione romana — pistacchio + panna.', en:'★ Gelato shop since 1880. A Roman institution — pistachio + whipped cream.', fr:'★ Glacier depuis 1880. Institution romaine — pistache + chantilly.', es:'★ Heladería desde 1880. Una institución romana — pistacho + crema.', de:'★ Eisdiele seit 1880. Römische Institution — Pistazie + Sahne.', ru:'★ Джелатерия с 1880 года. Римская легенда — фисташка + сливки.'} },
-    { n:'Zelato', a:'Via degli Aurunci 40', m:4, r:4.9, id:'ChIJgy9OIABhLxMR_yrTXLmGkPc', p:'06 4543 3179',
+      t:{it:"★ Gelateria dal 1880. Istituzione romana — pistacchio + panna. Curiosità: nello stesso storico palazzo c'è anche la Scuola di Scrittura Genius.", en:"★ Gelato shop since 1880. A Roman institution — pistachio + whipped cream. Fun fact: the historic building also houses the Genius creative writing school.", fr:"★ Glacier depuis 1880. Institution romaine — pistache + chantilly. Anecdote : le même bâtiment historique abrite aussi l'école d'écriture Genius.", es:"★ Heladería desde 1880. Una institución romana — pistacho + crema. Curiosidad: en el mismo edificio histórico también está la Escuela de Escritura Genius.", de:"★ Eisdiele seit 1880. Römische Institution — Pistazie + Sahne. Übrigens: Im selben historischen Gebäude befindet sich auch die Schreibschule Genius.", ru:"★ Джелатерия с 1880 года. Римская легенда — фисташка + сливки. Кстати: в том же историческом здании находится и школа писательского мастерства Genius."} },
+    { n:'Zelato', a:'Via degli Aurunci 40', m:4, r:4.9, id:'ChIJgy9OIABhLxMR_yrTXLmGkPc', lat:41.8963377, lng:12.5149885, p:'06 4543 3179',
       h:{it:'Lun–Dom 12:00–22:00', en:'Mon–Sun 12:00–22:00', fr:'Lun–Dim 12h–22h', es:'Lun–Dom 12:00–22:00', de:'Mo–So 12–22', ru:'Пн–Вс 12:00–22:00'},
       t:{it:"Gusti d'autore: prugna-cardamomo, golden latte. Da provare.", en:'Signature flavours: plum-cardamom, golden latte. A must.', fr:'Parfums signature : prune-cardamome, golden latte. À essayer.', es:'Sabores de autor: ciruela-cardamomo, golden latte. Imperdible.', de:'Signature-Sorten: Pflaume-Kardamom, Golden Latte. Unbedingt probieren.', ru:'Авторские вкусы: слива-кардамон, golden latte. Обязательно попробуйте.'} },
-    { n:'GRANGEL', a:'Via degli Equi 42a', m:4, r:4.9, id:'ChIJbZLqIpphLxMRxsohGPJrb3U', p:'389 507 1375',
+    { n:'GRANGEL', a:'Via degli Equi 42a', m:4, r:4.9, id:'ChIJbZLqIpphLxMRxsohGPJrb3U', lat:41.8961127, lng:12.5132738, p:'389 507 1375',
       t:{it:'Gelato siciliano autentico — cannoli da non perdere.', en:"Authentic Sicilian gelato — don't miss the cannoli.", fr:"Glace sicilienne authentique — ne manquez pas les cannoli.", es:'Helado siciliano auténtico — no se pierdan los cannoli.', de:'Authentisches sizilianisches Eis — Cannoli nicht verpassen.', ru:'Настоящее сицилийское джелато — обязательно попробуйте канноли.'} },
-    { n:'Gelato San Lorenzo 100% Naturale', a:'Via Tiburtina 6', m:4, r:4.5, id:'ChIJrbD_mplhLxMRdoYmiTcVZT4', p:'06 446 9440',
+    { n:'Gelato San Lorenzo 100% Naturale', a:'Via Tiburtina 6', m:4, r:4.5, id:'ChIJrbD_mplhLxMRdoYmiTcVZT4', lat:41.8969151, lng:12.5118203, p:'06 446 9440',
       h:{it:'Tutti i giorni 10:00–24:00', en:'Daily 10:00–24:00', fr:'Tous les jours 10h–24h', es:'Todos los días 10:00–24:00', de:'Täglich 10–24', ru:'Ежедневно 10:00–24:00'},
       t:{it:'Cono gluten-free, mango e frutto della passione strepitosi.', en:'Gluten-free cones, stunning mango & passion fruit.', fr:'Cornets sans gluten, mangue et fruit de la passion sublimes.', es:'Cono sin gluten, mango y maracuyá increíbles.', de:'Glutenfreie Hörnchen, fantastische Mango & Passionsfrucht.', ru:'Безглютеновые рожки, потрясающие манго и маракуйя.'} },
   ],
   pastry: [
-    { n:'Pasticceria Regoli', a:'Via dello Statuto 60', m:18, r:4.5, rc:6134, id:'ChIJC978ZrthLxMRzYBNfksMM4A', p:'06 487 2812',
+    { n:'Pasticceria Regoli', a:'Via dello Statuto 60', m:18, r:4.5, rc:6134, id:'ChIJC978ZrthLxMRzYBNfksMM4A', lat:41.8948172, lng:12.5009492, p:'06 487 2812',
       h:{it:'Mar chiuso · 7:00–19:00', en:'Closed Tue · 7:00–19:00', fr:'Fermé Mar · 7h–19h', es:'Cerrado Mar · 7:00–19:00', de:'Di geschl. · 7–19', ru:'Вт закрыто · 7:00–19:00'},
       iconic:true,
       t:{it:"★ Il maritozzo più famoso di Roma. Tappa d'obbligo verso il Colosseo.", en:"★ Rome's most famous maritozzo. A mandatory stop on the way to the Colosseum.", fr:'★ Le maritozzo le plus célèbre de Rome. Étape obligatoire vers le Colisée.', es:'★ El maritozzo más famoso de Roma. Parada obligatoria hacia el Coliseo.', de:'★ Roms berühmtester Maritozzo. Pflichtstopp Richtung Kolosseum.', ru:'★ Самый знаменитый маритоццо Рима. Обязательная остановка по пути к Колизею.'} },
   ],
   laundry: [
-    { n:'Speed Queen', a:'Via dei Latini 65', m:2, r:4.9, id:'ChIJPxanVkNhLxMRyWo35eqcDWM', p:'351 985 7348',
+    { n:'Speed Queen', a:'Via dei Latini 65', m:2, r:4.9, id:'ChIJPxanVkNhLxMRyWo35eqcDWM', lat:41.8961592, lng:12.5144055, p:'351 985 7348',
       h:{it:'Tutti i giorni 7:00–22:00', en:'Daily 7:00–22:00', fr:'Tous les jours 7h–22h', es:'Todos los días 7:00–22:00', de:'Täglich 7–22', ru:'Ежедневно 7:00–22:00'},
       featured:true,
       t:{it:'★ Self-service nuovissima, sotto casa. Carta o app.', en:'★ Brand-new self-service right by the apartment. Card or app.', fr:"★ Self-service tout neuf, juste à côté. Carte ou app.", es:'★ Self-service nuevísima, al lado de la casa. Tarjeta o app.', de:'★ Brandneue SB-Wäscherei, direkt nebenan. Karte oder App.', ru:'★ Совсем новая прачечная самообслуживания рядом с домом. Карта или приложение.'} },
-    { n:'Lavanderia Suman', a:'Piazzale Tiburtino 31', m:6, r:4.8, id:'ChIJlaDJ84thLxMRKXmV7UdnW0k', p:'348 302 7066',
+    { n:'Lavanderia Suman', a:'Piazzale Tiburtino 31', m:6, r:4.8, id:'ChIJlaDJ84thLxMRKXmV7UdnW0k', lat:41.896563, lng:12.5114833, p:'348 302 7066',
       h:{it:'Tutti i giorni 8:30–21:00', en:'Daily 8:30–21:00', fr:'Tous les jours 8h30–21h', es:'Todos los días 8:30–21:00', de:'Täglich 8:30–21', ru:'Ежедневно 8:30–21:00'},
       t:{it:'Servizio completo: porti i panni e li ritiri lavati.', en:'Full service: drop off and pick up clean.', fr:'Service complet : déposez le linge, récupérez-le propre.', es:'Servicio completo: deja la ropa y la recoges lavada.', de:'Voller Service: Wäsche abgeben, sauber abholen.', ru:'Полный сервис: оставляете бельё, забираете чистым.'} },
   ],
   pharmacy: [
-    { n:'Farmacia Ioculano', a:'Via Tiburtina 40', m:2, r:4.7, id:'ChIJvdoxxJthLxMRrUm7L5DXJlE', p:'06 445 6390',
+    { n:'Farmacia Ioculano', a:'Via Tiburtina 40', m:2, r:4.7, id:'ChIJvdoxxJthLxMRrUm7L5DXJlE', lat:41.8974184, lng:12.5126885, p:'06 445 6390',
       h:{it:'Lun–Sab 8:30–20:00', en:'Mon–Sat 8:30–20:00', fr:'Lun–Sam 8h30–20h', es:'Lun–Sáb 8:30–20:00', de:'Mo–Sa 8:30–20', ru:'Пн–Сб 8:30–20:00'},
       t:{it:'Personale english-speaking, possono ordinare farmaci specifici.', en:'English-speaking staff, can order specific medications.', fr:'Personnel anglophone, peut commander des médicaments spécifiques.', es:'Personal que habla inglés, pueden encargar medicamentos específicos.', de:'Englischsprachiges Personal, kann spezielle Medikamente bestellen.', ru:'Персонал говорит по-английски, могут заказать конкретные лекарства.'} },
-    { n:'Farmacia Pinchetti', a:'Via dei Sabelli 84', m:4, r:4.2, id:'ChIJMb1aUpphLxMRTNV4xE1ZBig', p:'06 490237',
+    { n:'Farmacia Pinchetti', a:'Via dei Sabelli 84', m:4, r:4.2, id:'ChIJMb1aUpphLxMRTNV4xE1ZBig', lat:41.8965885, lng:12.5148509, p:'06 490237',
       h:{it:'Lun–Ven 8:30–13 / 16–19:30', en:'Mon–Fri 8:30–13 / 16–19:30', fr:'Lun–Ven 8h30–13h / 16h–19h30', es:'Lun–Vie 8:30–13 / 16–19:30', de:'Mo–Fr 8:30–13 / 16–19:30', ru:'Пн–Пт 8:30–13 / 16–19:30'},
       t:{it:"Farmaciste molto disponibili, fanno l'extra per trovare la soluzione.", en:'Pharmacists go the extra mile to find solutions.', fr:'Pharmaciennes très serviables, font tout pour trouver la solution.', es:'Farmacéuticas muy dispuestas, hacen lo posible por ayudar.', de:'Sehr hilfsbereite Apothekerinnen, finden Lösungen.', ru:'Очень внимательные фармацевты, всегда ищут решение.'} },
   ],
@@ -658,26 +658,26 @@ const POI = {
     { num:'02', time:'10 min', type:'stop',
       title:{it:'Basilica di Santa Maria Maggiore', en:'Basilica of Saint Mary Major', fr:'Basilique Sainte-Marie-Majeure', es:'Basílica de Santa María la Mayor', de:'Basilika Santa Maria Maggiore', ru:'Базилика Санта-Мария-Маджоре'},
       d:{it:"Una delle quattro basiliche papali di Roma, dove è sepolto Papa Francesco (Bergoglio). Consigliata la visita ai sotterranei/scavi archeologici sotto la basilica.", en:'One of Rome\u2019s four papal basilicas, and the burial place of Pope Francis (Bergoglio). We recommend visiting the underground excavations beneath the basilica.', fr:"L'une des quatre basiliques papales de Rome, où repose le pape François (Bergoglio). Nous recommandons la visite des fouilles souterraines sous la basilique.", es:'Una de las cuatro basílicas papales de Roma, donde está sepultado el Papa Francisco (Bergoglio). Recomendamos visitar las excavaciones subterráneas bajo la basílica.', de:'Eine der vier päpstlichen Basiliken Roms, Grabstätte von Papst Franziskus (Bergoglio). Empfehlenswert ist der Besuch der unterirdischen Ausgrabungen unter der Basilika.', ru:'Одна из четырёх папских базилик Рима, место погребения Папы Франциска (Бергольо). Рекомендуем посетить подземные раскопки под базиликой.'},
-      link:'ChIJ1zB926RhLxMRejWMj_tUs_c' },
+      lat:41.8975986, lng:12.4984084 },
     { num:'03', time:'18 min', type:'treat',
       title:{it:'★ Pasticceria Regoli', en:'★ Pasticceria Regoli', fr:'★ Pasticceria Regoli', es:'★ Pasticceria Regoli', de:'★ Pasticceria Regoli', ru:'★ Pasticceria Regoli'},
       d:{it:'TAPPA GOLOSA. Via dello Statuto 60: il maritozzo più amato di Roma. Si fa la fila — vale la pena. (Chiuso il martedì.)', en:"FOOD STOP. Via dello Statuto 60: Rome's most loved maritozzo. Yes there's a queue — yes it's worth it. (Closed Tuesdays.)", fr:'ÉTAPE GOURMANDE. Via dello Statuto 60 : le maritozzo le plus aimé de Rome. Il y a la queue — ça en vaut la peine. (Fermé le mardi.)', es:'PARADA GOLOSA. Via dello Statuto 60: el maritozzo más querido de Roma. Hay cola — vale la pena. (Cerrado los martes.)', de:'GENUSS-STOPP. Via dello Statuto 60: Roms beliebtester Maritozzo. Ja, eine Schlange — sie lohnt sich. (Dienstags geschlossen.)', ru:'ВКУСНАЯ ОСТАНОВКА. Via dello Statuto 60 — самый любимый маритоццо Рима. Очередь есть, но того стоит. (Вторник — выходной.)'},
-      link:'ChIJC978ZrthLxMRzYBNfksMM4A' },
+      lat:41.8948172, lng:12.5009492 },
     { num:'04', time:'22 min', type:'treat',
       title:{it:'★ Palazzo del Freddo Fassi (se è pomeriggio)', en:'★ Palazzo del Freddo Fassi (afternoons only)', fr:'★ Palazzo del Freddo Fassi (l\u2019après-midi)', es:'★ Palazzo del Freddo Fassi (por la tarde)', de:'★ Palazzo del Freddo Fassi (nachmittags)', ru:'★ Palazzo del Freddo Fassi (только днём)'},
       d:{it:"TAPPA GOLOSA BONUS, sullo stesso lato della strada. Se ci passate nel pomeriggio, deviazione su Via Principe Eugenio: la gelateria romana dal 1880. Pistacchio + panna è la combinazione storica.", en:'BONUS FOOD STOP, on the same side of the street. If you\u2019re passing by in the afternoon, detour onto Via Principe Eugenio: the Roman gelateria since 1880. Pistachio + whipped cream is the historic combo.', fr:"ÉTAPE GOURMANDE BONUS, du même côté de la rue. Si vous passez l'après-midi, petit détour sur Via Principe Eugenio : le glacier romain depuis 1880. Pistache + chantilly, l'incontournable.", es:'PARADA GOLOSA EXTRA, en el mismo lado de la calle. Si pasan por la tarde, desvío por Via Principe Eugenio: la heladería romana desde 1880. Pistacho + crema, la combinación clásica.', de:'BONUS-GENUSS-STOPP auf derselben Straßenseite. Wenn Sie nachmittags vorbeikommen: kleiner Umweg über Via Principe Eugenio, die römische Eisdiele seit 1880. Pistazie + Sahne ist der Klassiker.', ru:'ДОПОЛНИТЕЛЬНАЯ ОСТАНОВКА на той же стороне улицы. Если вы окажетесь здесь днём — небольшой крюк по Via Principe Eugenio, римская джелатерия с 1880 года. Фисташка + сливки — классика.'},
-      link:'ChIJhaEc9VlhLxMR-2YrmpIvm8s' },
+      lat:41.8935957, lng:12.5080897 },
     { num:'05', time:'30 min', type:'end',
       title:{it:'Il Colosseo', en:'The Colosseum', fr:'Le Colisée', es:'El Coliseo', de:'Das Kolosseum', ru:'Колизей'},
       d:{it:"Eccolo. Anfiteatro Flavio, 80 d.C. Suggerimento: da qui prendete la Metro C alla nuovissima stazione Colosseo–Fori Imperiali (vale la visita, basta il costo di un biglietto della metro) per ammirare l'archeo-stazione. Con lo stesso biglietto, senza pagarne un altro, potete proseguire sulla Metro A (cambio a San Giovanni) e scendere a Vittorio Emanuele, più vicina a casa — oppure prendere un bus o un tram, sempre coperti dallo stesso biglietto.", en:'Here it is. Flavian Amphitheatre, AD 80. Tip: from here, take Metro C at the brand-new Colosseo–Fori Imperiali station (well worth it, just the cost of a metro ticket) to see the museum-station. With the same ticket, no need to pay again, you can continue on Metro A (change at San Giovanni) and get off at Vittorio Emanuele, closer to the apartment — or hop on a bus or tram, also covered by the same ticket.', fr:"Le voici. Amphithéâtre Flavien, 80 ap. J.-C. Astuce : prenez le métro C à la toute nouvelle station Colosseo–Fori Imperiali (elle vaut la visite, pour le prix d'un simple ticket de métro), pour admirer l'archéo-station. Avec le même ticket, sans en repayer un autre, vous pouvez continuer sur le métro A (changement à San Giovanni) et descendre à Vittorio Emanuele, plus proche de l'appartement — ou prendre un bus ou un tram, également couverts par le même ticket.", es:'Aquí está. Anfiteatro Flavio, 80 d.C. Tip: tomen el Metro C en la nueva estación Colosseo–Fori Imperiali (vale la pena, solo cuesta un billete de metro) para ver la arqueo-estación. Con el mismo billete, sin pagar otro, pueden continuar en el Metro A (cambio en San Giovanni) y bajarse en Vittorio Emanuele, más cerca del apartamento — o tomar un autobús o un tranvía, también cubiertos por el mismo billete.', de:'Hier ist es. Flavisches Amphitheater, 80 n. Chr. Tipp: Metro C an der neuen Station Colosseo–Fori Imperiali nehmen (lohnt sich, kostet nur eine Metro-Fahrkarte), um die Museumsstation zu sehen. Mit demselben Ticket, ohne erneut zu bezahlen, können Sie mit der Metro A weiterfahren (Umsteigen in San Giovanni) und bei Vittorio Emanuele aussteigen, näher an der Wohnung — oder Bus oder Tram nehmen, ebenfalls mit demselben Ticket gültig.', ru:'Вот он. Амфитеатр Флавиев, 80 г. н.э. Совет: садитесь на метро C на новой станции Colosseo–Fori Imperiali (стоит того, всего за один билет на метро) — посмотрите станцию-музей. По тому же билету, не оплачивая заново, можно продолжить на метро A (пересадка на San Giovanni) и выйти на Vittorio Emanuele, ближе к квартире — или сесть на автобус или трамвай, тоже по тому же билету.'},
-      link:'ChIJrRMgU7ZhLxMRxAOFkC7I8Sg' },
+      lat:41.8902102, lng:12.4922309 },
   ]
 };
 
 // ============= APP =============
 const ORIGIN = "Via+dei+Latini+40,+Roma";
-const dirURL = (id) => `https://www.google.com/maps/dir/?api=1&origin=${ORIGIN}&destination_place_id=${id}&travelmode=walking`;
-const mapURL = (id) => `https://www.google.com/maps/place/?q=place_id:${id}`;
+const dirURL = (lat,lng) => `https://www.google.com/maps/dir/?api=1&origin=${ORIGIN}&destination=${lat},${lng}&travelmode=walking`;
+const mapURL = (lat,lng) => `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
 const ML = (obj, lang) => obj[lang] || obj.en || obj.it;
 
 let currentLang = 'it';
@@ -722,7 +722,7 @@ function renderCard(p, accentClass){
     ${badgeHTML}
     <div class="card-top">
       <div>
-        <h3 class="card-name"><a href="${mapURL(p.id)}" target="_blank" rel="noopener">${p.n}</a></h3>
+        <h3 class="card-name"><a href="${mapURL(p.lat,p.lng)}" target="_blank" rel="noopener">${p.n}</a></h3>
         <p class="card-addr">${p.a}</p>
       </div>
       <div class="card-time">
@@ -733,11 +733,11 @@ function renderCard(p, accentClass){
     <p class="card-tip">${tip}</p>
     <div class="card-meta">${ratingLine}${hoursLine}${phoneLine}</div>
     <div class="card-actions">
-      <a href="${dirURL(p.id)}" target="_blank" rel="noopener" class="btn btn-primary ${accent}">
+      <a href="${dirURL(p.lat,p.lng)}" target="_blank" rel="noopener" class="btn btn-primary ${accent}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="4" cy="6.5" r=".5" fill="currentColor"/><path d="m16 20 3-1 1-7-6-2"/><path d="m16 20-2-7-2.5-1c-1-.4-1-2 0-2.4l4-1.6 4 2 2 1"/><circle cx="13" cy="3.5" r="1.5"/></svg>
         ${dict['ui.dir']}
       </a>
-      <a href="${mapURL(p.id)}" target="_blank" rel="noopener" class="btn btn-secondary">
+      <a href="${mapURL(p.lat,p.lng)}" target="_blank" rel="noopener" class="btn btn-secondary">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 7-8 12-8 12s-8-5-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
         ${dict['ui.map']}
       </a>
@@ -752,8 +752,8 @@ function renderWalkStep(s){
   const markerCls = `marker-${s.type}`;
   const markerSym = s.type==='treat' ? '★' : (s.type==='end' ? '✓' : (s.type==='start' ? '▸' : '·'));
   const treatCls = s.type==='treat' ? 'treat' : '';
-  const linkHTML = s.link ? `
-    <a href="${dirURL(s.link)}" target="_blank" rel="noopener" class="walk-step-link">
+  const linkHTML = s.lat ? `
+    <a href="${dirURL(s.lat,s.lng)}" target="_blank" rel="noopener" class="walk-step-link">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M10 14 21 3M21 14v7H3V3h7"/></svg>
       ${dict['walk.directions']}
     </a>` : '';
